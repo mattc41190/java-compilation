@@ -46,9 +46,13 @@ case "$1" in
         # as long as all sources are listed either in the source path or is the primary target (`App.java`)
         # Note: The current directory is not in the sourcepath if you override it, but the primary
         # compilation target is available since it is specified.
+        # Note: When this runs dependencies are taken from the sourcepath and placed in to the final 
+        # directory (`bin` in this case). This means that dependencies are converted to classes for free. Woot.
+        # Note: sourcepath and classpath do the same thing in this exercise -- Why *shrug* -- The correct usage is sourcepath.
+        # Source: https://docs.oracle.com/javase/7/docs/technotes/tools/windows/javac.html#separating
         sp_cp_run)
             mkdir bin
-            javac -d bin -sourcepath parters App.java
+            javac -d bin --sourcepath parters App.java
             java -classpath ./bin App Logan Charles Jean
             ;;
 esac

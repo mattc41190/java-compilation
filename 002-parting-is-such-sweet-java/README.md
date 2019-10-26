@@ -16,5 +16,5 @@ Because I fel that the `001-hello-java` project had enough content already and I
 
 ## Notes on this exercise:
 
-- The code is essentially the same code that was used in the first exercise with the exception that it is broken into multiple directories. This is often a required aspect in code organization, but it can be a real beast to keep up with.
+- The code is essentially the same code that was used in the first exercise with the exception that it is broken into multiple directories. This is often a required aspect in code organization, but it can be a real beast to keep up with in Java compilation and execution.
 - When you need to compile items sequentially you must ensure that the classpath for compilation is respected. This means that dependents must have their dependencies available in the classpath (recall from the first exercise that the current directory is the default classpath). The methods for doing this are covered in the `run.sh` notes. 
