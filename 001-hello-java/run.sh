@@ -1,9 +1,9 @@
 # This is the application compile and runner script.
 # Read the comments in this file to understand what's occuring.
 
-# This is the simplest form of compiling and running useful Java projects. Certain project will only ever need this. 
+# This is the simplest form of compiling and running useful Java projects. Certain projects will only ever need this. 
 # When you understand this file you are capable of running anything that depends on the core Java 
-# libraries, and your own unpackaged code in a single directory (multiple directories are covered in part section 002).
+# libraries, and your own unpackaged code in a single directory (multiple directories are covered in section 002).
 
 # NOTE: Before running any option run `sh run.sh clean` to ensure cleanliness
 
@@ -24,20 +24,20 @@ case "$1" in
         # the JRE is unable to find a class with a main method called "App"
         empty_cp_run)
             javac App.java
-            java -cp /dev App
+            java -classpath /dev App
             ;;
         # The `explicit_cp_run` command will set the class path to the current directory `.`
         # and then execute the class. 
         explicit_cp_run)
             javac App.java
-            java -cp . App Mike Sonny Vito Fredo
+            java -classpath . App Mike Sonny Vito Fredo
             ;;
         # The `set_dir_run` command will create a classes directory 
         # and then execute the class. 
         set_dir_run)
             mkdir bin
             javac -d bin App.java
-            java -cp ./bin App Mickey Donald Goofy Daisy Pluto
+            java -classpath ./bin App Mickey Donald Goofy Daisy Pluto
             ;;
 esac
 
