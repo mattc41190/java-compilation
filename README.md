@@ -1,4 +1,4 @@
-# Java Compiling
+# Java Compilation
 
 ## What is this?
 
