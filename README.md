@@ -22,4 +22,5 @@ Some of us like knowing the essence of what is occurring and find the generally 
 - [Java Packaging Documentation](https://docs.oracle.com/javase/tutorial/java/package/index.html)
 - [Java Packaging Jars Lesson](https://docs.oracle.com/javase/tutorial/deployment/jar/index.html)
 - [Setting the Class Path](https://docs.oracle.com/javase/7/docs/technotes/tools/windows/classpath.html)
+- [Class Path Runtime vs Compile Time](https://techblog.bozho.net/runtime-classpath-vs-compile-time-classpath/)
 

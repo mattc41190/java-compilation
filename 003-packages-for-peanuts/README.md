@@ -21,4 +21,3 @@ Because packages are an essential part of running Java successfully.
 - From `javac` documentation: "If a class is part of a package, `javac` puts the class file in a subdirectory reflecting the package name, creating directories as needed"
 - [Read this over and over](https://docs.oracle.com/javase/7/docs/technotes/tools/windows/classpath.html#Understanding)
 - Largely speaking once you understand the directory structure rules for classpath adding in the additional complexity of the package naming convention is not entirely too heavy. 
- 
