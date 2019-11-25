@@ -42,14 +42,14 @@ case "$1" in
         # rather than `java X.class` 
         basic_jar_run)
             # Full System path to JAR we want available at compile time and run time
-            CALC=/Users/mattcale/Desktop/Learning/Java/java-compiling/004-jars-for-joy/A-wacky-calculator/wacky-calc.jar 
+            CALC=/Users/mattcale/java-compilation/004-jars-for-joy/A-wacky-calculator/wacky-calc.jar 
             mkdir app
             javac -d app \
                 -sourcepath .:com/door_store/*.java \
                 -classpath .:$CALC \
                 com/matthewcale/*.java
-            jar cvfe door_store.jar App -C app com
-            java -classpath app:$CALC -jar door_store.jar
+            jar cvfm door_store.jar Manifest.txt -C app com
+            java -jar door_store.jar
             ;;
         # The `inspect` command will show contents of a JAR.
         # Pre-Req: door_store.jar exists
