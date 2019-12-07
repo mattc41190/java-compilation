@@ -41,9 +41,9 @@ case "$1" in
             javac -classpath .:parters App.java
             java -classpath .:parters App
             ;;
-        # The `sp_cp_run` command runs the java compile command with even fancier tricks. The sourcepath option
-        # informs the compiler on the location of sources which supercedes the requirment for compiling in order 
-        # as long as all sources are listed either in the source path or is the primary target (`App.java`)
+        # The `sp_cp_run` command runs the java compile command with some tricks. The sourcepath option
+        # informs the compiler on the location of sources which supercedes the requirment for compiling classes 
+        # in order as long as all sources are listed either in the source path or is the primary target (`App.java`)
         # Note: The current directory is not in the sourcepath if you override it, but the primary
         # compilation target is available since it is specified.
         # Note: When this runs dependencies are taken from the sourcepath and placed in to the final 

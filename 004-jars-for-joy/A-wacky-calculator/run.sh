@@ -13,7 +13,9 @@ case "$1" in
             ;;
 
         # The `basic_build` command compiles the wacky-calculator into a lib directory and once compiled 
-        # into classes build a JAR. To prove that we have what we expect we can run an index command. 
+        # into classes build a JAR. To prove that we have what we expect we can run an index command.
+        # The commands broken down do the following: create a new directory, compile, then run the jar tool
+        # With the following options `cvf` (Create, Verbose, File(not stdout))  and `-C lib`
         basic_build)
             mkdir lib
             javac -d lib com/wacky_math/*.java

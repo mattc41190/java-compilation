@@ -1,4 +1,2 @@
-Manifest-Version: 1.0
-Created-By: 10.0.1 (Oracle Corporation)
 Main-Class: com/matthewcale/App
 Class-Path: /Users/mattcale/java-compilation/004-jars-for-joy/A-wacky-calculator/wacky-calc.jar

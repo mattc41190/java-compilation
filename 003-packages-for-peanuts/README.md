@@ -6,7 +6,7 @@ This is the third tutorial in the Java Compiling series and its intent is to tea
 
 ## Why make this?
 
-Because packages are an essential part of running Java successfully.
+Because packages are an essential part of running Java successfully at a scale of anything greater than trivial.
 
 ## How do I use this?
 

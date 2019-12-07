@@ -7,14 +7,15 @@
 # NOTE: Before running any option run `sh run.sh clean` to ensure cleanliness
 
 case "$1" in
-        # The `clean` command cleans the durrent directory of build artifacts
-        # Anything past this and `globstar`, (the `**` glob available in bash v4) may be required.
+        # The `clean` command cleans the current directory of build artifacts
+        # Anything more than this and `globstar`, (the `**` glob available in bash v4) may be required.
         clean)
             rm -f *.class
             rm -f com/matthewcale/*.class
             rm -f com/circus/cotton_candy/*.class
             rm -f com/circus/peanut/*.class
             rm -rf bin
+            echo "done cleaning"
             ;;
         # The `basic_run` command runs the java compile command and then executes the classes using the brute force method of
         # adding everything to the classpath individually.

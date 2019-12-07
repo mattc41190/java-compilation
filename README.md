@@ -23,4 +23,6 @@ Some of us like knowing the essence of what is occurring and find the generally 
 - [Java Packaging Jars Lesson](https://docs.oracle.com/javase/tutorial/deployment/jar/index.html)
 - [Setting the Class Path](https://docs.oracle.com/javase/7/docs/technotes/tools/windows/classpath.html)
 - [Class Path Runtime vs Compile Time](https://techblog.bozho.net/runtime-classpath-vs-compile-time-classpath/)
+- [TutorialsPoint Package Lesson](https://www.tutorialspoint.com/java/java_packages.htm)
+- [JUnit Getting Started](https://github.com/junit-team/junit4/wiki/Getting-started)
 

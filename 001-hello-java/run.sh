@@ -14,14 +14,15 @@ case "$1" in
             rm -rf bin
             ;;
         # The `basic_run` command runs the java compile command and then executes the class
-        # Note: There is no `package` in this class. There is no class path set here
+        # Note: There is no `package` in this class. There is no class path set here either.
         basic_run)
             javac App.java
             java App
             ;;
         # The `empty_cp_run` command will fail! It is intended to show the runner that by default
         # Java by default sets the classapth to the current directory. When we override this location 
-        # the JRE is unable to find a class with a main method called "App"
+        # the JRE is unable to find a class with a main method called "App". Since the JRE is unable
+        # to find a class called App possessing a main in the class path the command fails. 
         empty_cp_run)
             javac App.java
             java -classpath /dev App
@@ -32,7 +33,7 @@ case "$1" in
             javac App.java
             java -classpath . App Mike Sonny Vito Fredo
             ;;
-        # The `set_dir_run` command will create a classes directory 
+        # The `set_dir_run` command will create a classes directory (`javac` run with the `-d` flag) 
         # and then execute the class. 
         set_dir_run)
             mkdir bin

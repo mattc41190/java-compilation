@@ -6,7 +6,7 @@ This is the second tutorial in the Java Compiling series and its intent is to te
 
 ## Why make this?
 
-Because I fel that the `001-hello-java` project had enough content already and I wanted to discuss multiple directories in "unpackaged" land before moving into packages which have enough trouble without needing to explain the compilation of classes in other directories. 
+Because I felt that the `001-hello-java` project had enough content already and I wanted to discuss multiple directories in "unpackaged" land before moving into packages which have enough trouble without needing to explain the compilation of classes in other directories. 
 
 ## How do I use this?
 
